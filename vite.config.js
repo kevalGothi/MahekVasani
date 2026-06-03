@@ -26,14 +26,18 @@ export default defineConfig({
           if (req.url.startsWith('/api/')) {
             res.setHeader('Content-Type', 'application/json');
 
+            // Parse URL safely to extract pathname (strips query parameters like ?t=123)
+            const parsedUrl = new URL(req.url, 'http://localhost');
+            const pathname = parsedUrl.pathname;
+
             // 1. Check if local development mode is active
-            if (req.url === '/api/dev-status') {
+            if (pathname === '/api/dev-status') {
               res.end(JSON.stringify({ isLocalDev: true }));
               return;
             }
 
             // 2. Save settings
-            if (req.url === '/api/save-settings' && req.method === 'POST') {
+            if (pathname === '/api/save-settings' && req.method === 'POST') {
               const body = await getBody(req);
               const configPath = path.join(__dirname, 'src/data/portfolioConfig.json');
               
@@ -50,7 +54,7 @@ export default defineConfig({
             }
 
             // 3. Reset settings to default
-            if (req.url === '/api/reset-settings' && req.method === 'POST') {
+            if (pathname === '/api/reset-settings' && req.method === 'POST') {
               const configPath = path.join(__dirname, 'src/data/portfolioConfig.json');
               const defaults = {
                 siteConfig: {
@@ -76,7 +80,7 @@ export default defineConfig({
             }
 
             // 4. Upload photo or video
-            if (req.url === '/api/upload-media' && req.method === 'POST') {
+            if (pathname === '/api/upload-media' && req.method === 'POST') {
               const body = await getBody(req);
               const { fileName, fileType, dataUrl, thumbDataUrl, title, location, aspect, mediaType, duration } = body;
               
@@ -140,7 +144,7 @@ export default defineConfig({
             }
 
             // 5. Delete photo or video
-            if (req.url === '/api/delete-media' && req.method === 'POST') {
+            if (pathname === '/api/delete-media' && req.method === 'POST') {
               const body = await getBody(req);
               const { id, type } = body;
               

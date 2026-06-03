@@ -6,92 +6,253 @@
     "aboutTitle": "The Observer.",
     "aboutText": "I spend my life chasing light across untouched landscapes. From the quiet mist of ancient pine forests to the roaring isolation of alpine peaks, my goal is to capture the raw, untamed essence of the earth.",
     "availableText": "Available for assignments worldwide.",
-    "email": "hello@naturelens.com",
-    "instagram": "@nature.lens",
-    "instagramUrl": "https://instagram.com/nature.lens",
-    "youtubeUrl": "https://youtube.com/@naturelens",
+    "email": "mahek.vasani@gmail.com",
+    "instagram": "@mahek.clicks",
+    "instagramUrl": "https://www.instagram.com/mahek.clicks/",
+    "youtubeUrl": "https://www.youtube.com/@mahek_vlogs_07",
     "quote": "\"In every walk with nature, one receives far more than he seeks.\"",
     "quoteAuthor": "— John Muir"
   },
   "photos": [
     {
-      "id": 1,
-      "src": "/images/img1.jpg",
-      "title": "Misty Pines",
-      "location": "Pacific Northwest",
+      "id": "img-1780508289070-109",
+      "src": "/images/img-1780508289070-109.jpg",
+      "title": "Photo 32 2026 06 03 21 45 15",
+      "location": "",
       "aspect": "landscape"
     },
     {
-      "id": 2,
-      "src": "/images/img2.jpg",
-      "title": "Autumn Canopy",
-      "location": "Vermont",
-      "aspect": "portrait"
-    },
-    {
-      "id": 3,
-      "src": "/images/img3.jpg",
-      "title": "Deep Woods",
-      "location": "Black Forest",
+      "id": "img-1780508289219-489",
+      "src": "/images/img-1780508289219-489.jpg",
+      "title": "Photo 22 2026 06 03 21 45 15",
+      "location": "",
       "aspect": "landscape"
     },
     {
-      "id": 4,
-      "src": "/images/img4.jpg",
-      "title": "Fern Macro",
-      "location": "Hoh Rainforest",
-      "aspect": "portrait"
-    },
-    {
-      "id": 5,
-      "src": "/images/img5.jpg",
-      "title": "Morning Light",
-      "location": "Yosemite",
+      "id": "img-1780508289304-369",
+      "src": "/images/img-1780508289304-369.jpg",
+      "title": "Photo 24 2026 06 03 21 45 15",
+      "location": "",
       "aspect": "landscape"
     },
     {
-      "id": 6,
-      "src": "/images/img6.jpg",
-      "title": "Fox in the Wild",
-      "location": "Taiga",
-      "aspect": "portrait"
+      "id": "img-1780508289387-637",
+      "src": "/images/img-1780508289387-637.jpg",
+      "title": "Photo 20 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
     },
     {
-      "id": 7,
-      "src": "/images/img7.jpg",
-      "title": "Alpine Waterfall",
-      "location": "Swiss Alps",
-      "aspect": "portrait"
+      "id": "img-1780508289542-777",
+      "src": "/images/img-1780508289542-777.jpg",
+      "title": "Photo 27 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
     },
     {
-      "id": 8,
-      "src": "/images/img8.jpg",
-      "title": "Mountain Lake",
-      "location": "Banff",
+      "id": "img-1780508289680-442",
+      "src": "/images/img-1780508289680-442.jpg",
+      "title": "Photo 29 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508289845-692",
+      "src": "/images/img-1780508289845-692.jpg",
+      "title": "Photo 30 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508289954-106",
+      "src": "/images/img-1780508289954-106.jpg",
+      "title": "Photo 21 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290034-762",
+      "src": "/images/img-1780508290034-762.jpg",
+      "title": "Photo 25 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290115-389",
+      "src": "/images/img-1780508290115-389.jpg",
+      "title": "Photo 26 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290201-151",
+      "src": "/images/img-1780508290201-151.jpg",
+      "title": "Photo 28 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290300-774",
+      "src": "/images/img-1780508290300-774.jpg",
+      "title": "Photo 23 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290476-905",
+      "src": "/images/img-1780508290476-905.jpg",
+      "title": "Photo 31 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290578-462",
+      "src": "/images/img-1780508290578-462.jpg",
+      "title": "Photo 1 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290749-16",
+      "src": "/images/img-1780508290749-16.jpg",
+      "title": "Photo 11 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508290915-688",
+      "src": "/images/img-1780508290915-688.jpg",
+      "title": "Photo 14 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508291104-521",
+      "src": "/images/img-1780508291104-521.jpg",
+      "title": "Photo 3 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508291312-847",
+      "src": "/images/img-1780508291312-847.jpg",
+      "title": "Photo 4 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508291610-67",
+      "src": "/images/img-1780508291610-67.jpg",
+      "title": "Photo 6 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508291767-841",
+      "src": "/images/img-1780508291767-841.jpg",
+      "title": "Photo 7 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508292032-158",
+      "src": "/images/img-1780508292032-158.jpg",
+      "title": "Photo 8 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508292234-244",
+      "src": "/images/img-1780508292234-244.jpg",
+      "title": "Photo 2 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508292410-885",
+      "src": "/images/img-1780508292410-885.jpg",
+      "title": "Photo 5 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508292611-39",
+      "src": "/images/img-1780508292611-39.jpg",
+      "title": "Photo 19 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508292858-454",
+      "src": "/images/img-1780508292858-454.jpg",
+      "title": "Photo 12 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508293060-899",
+      "src": "/images/img-1780508293060-899.jpg",
+      "title": "Photo 15 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508293270-387",
+      "src": "/images/img-1780508293270-387.jpg",
+      "title": "Photo 17 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508293409-994",
+      "src": "/images/img-1780508293409-994.jpg",
+      "title": "Photo 18 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508293518-262",
+      "src": "/images/img-1780508293518-262.jpg",
+      "title": "Photo 9 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508293654-263",
+      "src": "/images/img-1780508293654-263.jpg",
+      "title": "Photo 13 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508293890-107",
+      "src": "/images/img-1780508293890-107.jpg",
+      "title": "Photo 16 2026 06 03 21 45 15",
+      "location": "",
+      "aspect": "landscape"
+    },
+    {
+      "id": "img-1780508294089-620",
+      "src": "/images/img-1780508294089-620.jpg",
+      "title": "Photo 10 2026 06 03 21 45 15",
+      "location": "",
       "aspect": "landscape"
     }
   ],
   "videos": [
     {
-      "id": 1,
-      "thumb": "/videos/vid1.jpg",
-      "title": "The Awakening Forest (Short Film)",
-      "duration": "4:21",
-      "videoSrc": "/videos/vid1.mp4"
+      "id": "vid-1780508268603-462",
+      "thumb": "/videos/vid-1780508268603-462-thumb.jpg",
+      "title": "Video 2026 06 03 21 45 15 (2)",
+      "duration": "0:04",
+      "videoSrc": "/videos/vid-1780508268603-462.mp4"
     },
     {
-      "id": 2,
-      "thumb": "/videos/vid2.jpg",
-      "title": "River Bends - Drone Reel",
-      "duration": "2:15",
-      "videoSrc": "/videos/vid2.mp4"
-    },
-    {
-      "id": 3,
-      "thumb": "/videos/vid3.jpg",
-      "title": "High Altitude",
-      "duration": "5:40",
-      "videoSrc": "/videos/vid3.mp4"
+      "id": "vid-1780508269211-483",
+      "thumb": "/videos/vid-1780508269211-483-thumb.jpg",
+      "title": "Video 2026 06 03 21 45 15",
+      "duration": "0:06",
+      "videoSrc": "/videos/vid-1780508269211-483.mp4"
     }
   ]
 }
