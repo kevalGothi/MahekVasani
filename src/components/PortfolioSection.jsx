@@ -1,35 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   Camera, Play, MapPin, LayoutGrid, Columns, Rows,
 } from 'lucide-react';
-import { PHOTOS, VIDEOS } from '../data/portfolioData';
-import { getAllImages, getAllVideos } from '../utils/imageDB';
+import configData from '../data/portfolioConfig.json';
 
 const PortfolioSection = ({ addToRefs, openLightbox }) => {
   const [activeTab, setActiveTab] = useState('photos');
-  const [photos, setPhotos] = useState([]);
-  const [videos, setVideos] = useState([]);
   const [layoutMode, setLayoutMode] = useState('masonry');
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const loadMedia = async () => {
-      try {
-        const [dbImages, dbVideos] = await Promise.all([
-          getAllImages(),
-          getAllVideos(),
-        ]);
-        setPhotos(dbImages.length > 0 ? dbImages : PHOTOS);
-        setVideos(dbVideos.length > 0 ? dbVideos : VIDEOS);
-      } catch {
-        setPhotos(PHOTOS);
-        setVideos(VIDEOS);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    loadMedia();
-  }, []);
+  const photos = configData.photos || [];
+  const videos = configData.videos || [];
 
   return (
     <section id="portfolio" className="portfolio-section">
@@ -57,9 +37,7 @@ const PortfolioSection = ({ addToRefs, openLightbox }) => {
                 </div>
               </div>
 
-              {isLoading ? (
-                <div className="gallery-loading"><div className="admin-spinner large" /><p>Loading gallery...</p></div>
-              ) : photos.length === 0 ? (
+              {photos.length === 0 ? (
                 <div className="gallery-empty"><p>No images yet. Visit the admin panel to upload photos.</p></div>
               ) : (
                 <div className={
@@ -84,9 +62,7 @@ const PortfolioSection = ({ addToRefs, openLightbox }) => {
             </>
           ) : (
             /* Video Grid */
-            isLoading ? (
-              <div className="gallery-loading"><div className="admin-spinner large" /><p>Loading videos...</p></div>
-            ) : videos.length === 0 ? (
+            videos.length === 0 ? (
               <div className="gallery-empty"><p>No videos yet. Visit the admin panel to upload videos.</p></div>
             ) : (
               <div className="video-grid">

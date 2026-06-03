@@ -1,33 +1,22 @@
 // ============================================================
-// Settings utility — stores site configuration in localStorage.
-// Falls back to defaults from portfolioData.js if not set.
+// Settings utility — retrieves site configuration from the JSON file.
 // ============================================================
 
-import { SITE_CONFIG } from '../data/portfolioData';
+import configData from '../data/portfolioConfig.json';
 
 const SETTINGS_KEY = 'naturelens_site_settings';
 
-/** Get current settings merged with defaults */
+/** Get current settings */
 export function getSettings() {
-  try {
-    const stored = localStorage.getItem(SETTINGS_KEY);
-    if (stored) {
-      const parsed = JSON.parse(stored);
-      // Merge with defaults so new fields always have fallback
-      return { ...SITE_CONFIG, ...parsed };
-    }
-  } catch {
-    // corrupted data, ignore
-  }
-  return { ...SITE_CONFIG };
+  return configData.siteConfig;
 }
 
-/** Save settings to localStorage */
+/** Save settings locally (as a fallback or for local operations) */
 export function saveSettings(settings) {
   localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 }
 
-/** Reset settings to defaults */
+/** Reset settings */
 export function resetSettings() {
   localStorage.removeItem(SETTINGS_KEY);
 }

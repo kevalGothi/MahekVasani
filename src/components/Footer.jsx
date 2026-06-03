@@ -1,6 +1,6 @@
 import React from 'react';
-import { Mail, AtSign } from 'lucide-react';
-import { SITE_CONFIG } from '../data/portfolioData';
+import { Mail } from 'lucide-react';
+import { getSettings } from '../utils/settings';
 
 // Custom SVG icons for brands
 const InstagramIcon = ({ size = 20 }) => (
@@ -19,33 +19,37 @@ const YouTubeIcon = ({ size = 20 }) => (
 );
 
 const Footer = ({ addToRefs }) => {
+  const config = getSettings();
+
   return (
     <footer id="about" className="site-footer">
       <div className="footer-grid">
         <div ref={addToRefs} className="reveal-element footer-about">
-          <h3 className="footer-title">{SITE_CONFIG.aboutTitle}</h3>
-          <p className="footer-text">{SITE_CONFIG.aboutText}</p>
-          <p className="footer-text">{SITE_CONFIG.availableText}</p>
+          <h3 className="footer-title">{config.aboutTitle}</h3>
+          <p className="footer-text">{config.aboutText}</p>
+          <p className="footer-text">{config.availableText}</p>
         </div>
         <div ref={addToRefs} className="reveal-element footer-connect">
           <h4 className="footer-connect-title">Connect</h4>
-          <a href={`mailto:${SITE_CONFIG.email}`} className="footer-link">
-            <Mail size={20} className="footer-link-icon" /> {SITE_CONFIG.email}
-          </a>
-          {SITE_CONFIG.instagramUrl && (
-            <a href={SITE_CONFIG.instagramUrl} target="_blank" rel="noopener noreferrer" className="footer-link">
-              <InstagramIcon /> {SITE_CONFIG.instagram}
+          {config.email && (
+            <a href={`mailto:${config.email}`} className="footer-link">
+              <Mail size={20} className="footer-link-icon" /> {config.email}
             </a>
           )}
-          {SITE_CONFIG.youtubeUrl && (
-            <a href={SITE_CONFIG.youtubeUrl} target="_blank" rel="noopener noreferrer" className="footer-link">
+          {config.instagramUrl && (
+            <a href={config.instagramUrl} target="_blank" rel="noopener noreferrer" className="footer-link">
+              <InstagramIcon /> {config.instagram || 'Instagram'}
+            </a>
+          )}
+          {config.youtubeUrl && (
+            <a href={config.youtubeUrl} target="_blank" rel="noopener noreferrer" className="footer-link">
               <YouTubeIcon /> YouTube
             </a>
           )}
         </div>
       </div>
       <div className="footer-copyright">
-        <p>&copy; {new Date().getFullYear()} {SITE_CONFIG.name} Photography.</p>
+        <p>&copy; {new Date().getFullYear()} {config.name || 'Nature.Lens'} Photography.</p>
       </div>
     </footer>
   );
